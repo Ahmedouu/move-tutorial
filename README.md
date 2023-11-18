@@ -1,10 +1,10 @@
 # move-tutorial
 some simple move modules for learning purposes
 
-#Install rust 
+# Install rust 
 https://www.rust-lang.org/tools/install
 
-#Clone the move repo and install 
+# Clone the move repo and install 
 ```
 git clone https://github.com/move-language/move.git
 cd move
@@ -13,7 +13,8 @@ source ~/.profile
 cargo install --lock --path language/tools/move-cli
 ```
 The lock in cargo install is to avoid an issue of rust latest version mismatching with the version used by move.
-Test your installation:
+
+# Test your installation:
 ```
 move --help
 ```
