@@ -5,14 +5,15 @@ some simple move modules for learning purposes
 https://www.rust-lang.org/tools/install
 
 # Clone the move repo and install 
+If on windows use WSL make sure you are inside WSL before you clone the repo otherwise you won't be able to install, and if not just run the following line by line in bash:
 ```
 git clone https://github.com/move-language/move.git
 cd move
 ./scripts/dev_setup.sh -ypt
 source ~/.profile
-cargo install --lock --path language/tools/move-cli
+cargo install --locked --path language/tools/move-cli
 ```
-The lock in cargo install is to avoid an issue of rust latest version mismatching with the version used by move.
+The locked in cargo install is to avoid an issue of rust latest version mismatching with the version used by move.
 
 # Test your installation:
 ```
