@@ -1,0 +1,1 @@
+This module represents an onchain company
