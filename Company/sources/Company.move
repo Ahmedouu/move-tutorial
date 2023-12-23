@@ -1,8 +1,9 @@
   
 module 0x42::Company {
   use std::vector;
+  use std::string;
   const CONTRACT:address = @0x42;
-
+  // you can look here to see how to print a string a lol 
   struct Employees has store, key, drop{
     people: vector<Employee>
   }
@@ -14,6 +15,7 @@ module 0x42::Company {
   }
   
   public fun create_employee(_employee: Employee, _employees: &mut Employees): Employee {
+    std::debug::print(&string::utf8(b"now calling the create_employee function: "));
     let newEmployee = Employee {
       name: _employee.name,
       age: _employee.age,
@@ -55,6 +57,7 @@ module 0x42::Company {
   }
   #[test] 
   fun test_create_employee(){
+    
     let ahmedou = Employee {
       name: b"Ahemdou",
       age: 25,
